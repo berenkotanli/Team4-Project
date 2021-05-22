@@ -1,6 +1,6 @@
-package com.beren.team4project.retrofit
+package com.upschool.team4project.retrofit
 
-import com.beren.team4project.entity.YemeklerCevap
+import com.upschool.team4project.entity.YemeklerCevap
 import retrofit2.Call
 import retrofit2.http.GET
 

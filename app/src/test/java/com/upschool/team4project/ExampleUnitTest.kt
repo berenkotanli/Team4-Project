@@ -1,4 +1,4 @@
-package com.beren.team4project
+package com.upschool.team4project
 
 import org.junit.Test
 

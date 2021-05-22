@@ -1,4 +1,4 @@
-package com.beren.team4project.retrofit
+package com.upschool.team4project.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
