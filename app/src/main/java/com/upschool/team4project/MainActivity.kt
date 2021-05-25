@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                         Log.e("yemek id:", i.yemek_id.toString())
                         Log.e("yemek adı:", i.yemek_adi)
                         Log.e("yemek fiyat :", i.yemek_fiyat.toString())
+                        Log.e("yemek resim :", i.yemek_resim_adi)
 
 
                     }
