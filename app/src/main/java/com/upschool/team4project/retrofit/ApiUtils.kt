@@ -1,4 +1,4 @@
-package com.beren.team4project.retrofit
+package com.upschool.team4project.retrofit
 
 class ApiUtils {
     companion object{

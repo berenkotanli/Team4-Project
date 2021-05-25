@@ -1,4 +1,4 @@
-package com.beren.team4project
+package com.upschool.team4project
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

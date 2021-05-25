@@ -1,4 +1,4 @@
-package com.beren.team4project.entity
+package com.upschool.team4project.entity
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
