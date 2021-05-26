@@ -32,10 +32,8 @@ class MainActivity : AppCompatActivity() {
                         Log.e("yemek fiyat :", i.yemek_fiyat.toString())
                         Log.e("yemek resim :", i.yemek_resim_adi)
 
-
                     }
                 }
-
                 override fun onFailure(call: Call<YemeklerCevap>?, t: Throwable?) {}
             })
         }

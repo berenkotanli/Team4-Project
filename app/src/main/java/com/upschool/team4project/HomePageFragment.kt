@@ -7,15 +7,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Adapter
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.upschool.team4project.databinding.FragmentHomePageBinding
+import com.upschool.team4project.viewModel.HomePageFragmentViewModel
 
 
 class HomePageFragment : Fragment() {
 
     private lateinit var design:FragmentHomePageBinding
-    private lateinit var foodList:ArrayList<Food>
+    //private lateinit var foodList:ArrayList<Food>
     private lateinit var adapter:FoodAdapter
+    private lateinit var viewModel: HomePageFragmentViewModel
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,23 +27,21 @@ class HomePageFragment : Fragment() {
     ): View? {
 
         design = DataBindingUtil.inflate(inflater,R.layout.fragment_home_page, container, false)
-        design.rvfood.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+       design.rvfood.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        design.homePageFragment=this
 
-        val f1 = Food(1,"Burger","burger", 15)
-        val f2 = Food(1,"Burger", "burger",15)
-        val f3 = Food(1,"Burger", "burger",15)
-        val f4 = Food(1,"Burger", "burger",15)
+        viewModel.yemeklerListesi.observe(viewLifecycleOwner,{ yemeklerListesi ->
+            adapter = FoodAdapter(requireContext(),yemeklerListesi)
+            design.adapter=adapter
 
-        foodList = ArrayList()
-        foodList.add(f1)
-        foodList.add(f2)
-        foodList.add(f3)
-        foodList.add(f4)
-
-        adapter = FoodAdapter(requireContext(),foodList)
-        design.rvfood.adapter = adapter
-
+        })
         return design.root
+    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        val temp:HomePageFragmentViewModel by viewModels()
+        viewModel=temp
     }
 
 }

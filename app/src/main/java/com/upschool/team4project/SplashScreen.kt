@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.splash_screen.*
 
+
 class SplashScreen:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +16,7 @@ class SplashScreen:AppCompatActivity() {
         val topAnimation=AnimationUtils.loadAnimation(this,R.anim.top_animatior)
         val middleAnimation=AnimationUtils.loadAnimation(this,R.anim.middle_animation)
         val bottomAnimation=AnimationUtils.loadAnimation(this,R.anim.bottom_animation)
+
 
         imageView.startAnimation(topAnimation)
         textViewSplash.startAnimation(middleAnimation)

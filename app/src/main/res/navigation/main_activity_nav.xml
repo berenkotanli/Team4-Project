@@ -11,13 +11,16 @@
         android:label="HomePageFragment"
         tools:layout="@layout/fragment_home_page">
         <action
-            android:id="@+id/action_homePageFragment2_to_detailPageFragment"
+            android:id="@+id/detayaGecis"
             app:destination="@id/detailPageFragment" />
-        <argument android:name="nesne" />
     </fragment>
     <fragment
         android:id="@+id/detailPageFragment"
         android:name="com.upschool.team4project.DetailPageFragment"
         android:label="DetailPageFragment"
-        tools:layout="@layout/fragment_detail_page"/>
+        tools:layout="@layout/fragment_detail_page">
+        <argument
+            android:name="nesne"
+            app:argType="com.upschool.team4project.entity.Yemekler" />
+    </fragment>
 </navigation>
