@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homePageFragment"
+        android:icon="@drawable/home"
+        android:title="@string/anasayfa"/>
+    <item
+        android:id="@+id/cartPageFragment"
+        android:enabled="true"
+        android:icon="@drawable/cart"
+        android:title="@string/sepet" />
+    <item
+        android:id="@+id/campaignPageFragment"
+        android:icon="@drawable/campaign"
+        android:title="@string/kampanya" />
+    <item
+        android:id="@+id/profilePageFragment"
+        android:icon="@drawable/account"
+        android:title="@string/hesap" />
+</menu>

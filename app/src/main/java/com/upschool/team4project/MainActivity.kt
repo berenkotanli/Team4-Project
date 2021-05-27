@@ -3,9 +3,12 @@ package com.upschool.team4project
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
 import com.upschool.team4project.entity.YemeklerCevap
 import com.upschool.team4project.retrofit.ApiUtils
 import com.upschool.team4project.retrofit.YemeklerDaoInterface
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -16,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val navHostFragment=supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        NavigationUI.setupWithNavController(bottomNav,navHostFragment.navController)
 
         ydaoi = ApiUtils.getYemeklerDaoInterface()
         tumYemekleriGoster()

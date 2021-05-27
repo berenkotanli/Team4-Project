@@ -23,4 +23,19 @@
             android:name="nesne"
             app:argType="com.upschool.team4project.entity.Yemekler" />
     </fragment>
+    <fragment
+        android:id="@+id/cartPageFragment"
+        android:name="com.upschool.team4project.CartPageFragment"
+        android:label="fragment_cart_page"
+        tools:layout="@layout/fragment_cart_page" />
+    <fragment
+        android:id="@+id/campaignPageFragment"
+        android:name="com.upschool.team4project.CampaignPageFragment"
+        android:label="fragment_campaign_page"
+        tools:layout="@layout/fragment_campaign_page" />
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.upschool.team4project.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" />
 </navigation>
