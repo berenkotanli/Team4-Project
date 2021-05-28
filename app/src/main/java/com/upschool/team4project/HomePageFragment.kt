@@ -27,7 +27,7 @@ class HomePageFragment : Fragment() {
     ): View? {
 
         design = DataBindingUtil.inflate(inflater,R.layout.fragment_home_page, container, false)
-       design.rvfood.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        design.rvfood.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         design.homePageFragment=this
 
         viewModel.yemeklerListesi.observe(viewLifecycleOwner,{ yemeklerListesi ->

@@ -10,6 +10,7 @@ import androidx.navigation.fragment.navArgs
 import com.squareup.picasso.Picasso
 import com.upschool.team4project.databinding.FragmentDetailPageBinding
 import kotlinx.android.synthetic.main.fragment_detail_page.*
+import kotlinx.android.synthetic.main.fragment_detail_page.view.*
 
 
 class DetailPageFragment : Fragment() {
