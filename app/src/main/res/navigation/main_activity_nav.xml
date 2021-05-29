@@ -33,10 +33,12 @@
         tools:layout="@layout/fragment_cart_page" >
         <argument
             android:name="isimNesne"
-            app:argType="string" />
+            app:argType="string"
+            android:defaultValue="yemek" />
         <argument
             android:name="fiyatNesne"
-            app:argType="string" />
+            app:argType="string"
+            android:defaultValue="yemek" />
     </fragment>
     <fragment
         android:id="@+id/campaignPageFragment"

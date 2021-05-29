@@ -20,9 +20,17 @@ class CartPageFragment : Fragment() {
         var design = inflater.inflate(R.layout.fragment_cart_page, container, false)
 
         val b:  CartPageFragmentArgs by navArgs()
+        if(b.isimNesne=="yemek" || b.fiyatNesne=="yemek"){
+            design.textViewFiyatSepet.text= "Sepetinizde ürün bulunmamaktadır."
+            design.textViewUrunSepet.text=""
+            design.textView10.text=""
+            design.textView8.text=""
+        }
+        else{
+            design.textViewFiyatSepet.text=b.isimNesne
+            design.textViewUrunSepet.text=b.fiyatNesne
+        }
 
-        design.textViewFiyatSepet.text=b.isimNesne
-        design.textViewUrunSepet.text=b.fiyatNesne
         return design
     }
 }
