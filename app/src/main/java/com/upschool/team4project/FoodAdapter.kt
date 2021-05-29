@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.upschool.team4project.databinding.YemekCardBinding
 import com.upschool.team4project.entity.Yemekler
+import com.upschool.team4project.fragments.HomePageFragmentDirections
 import kotlinx.android.synthetic.main.fragment_detail_page.view.*
 
 class FoodAdapter(var mContext:Context, var foodList: List<Yemekler>): RecyclerView.Adapter<FoodAdapter.CardDesignKeeper>() {

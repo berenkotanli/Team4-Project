@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/grey"
-        app:itemIconTint="@color/white"
+        android:background="@color/koyuAnaRenk"
+        app:itemIconTint="@color/yaziRenk1"
         app:itemRippleColor="#FFFFFF"
-        app:itemTextColor="#FFFFFF"
+        app:itemTextColor="@color/yaziRenk1"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

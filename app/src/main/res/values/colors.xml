@@ -8,4 +8,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#222222</color>
+
+    <color name="anaRenk">#96C6D9</color>
+    <color name="koyuAnaRenk">#7AA5BF</color>
+    <color name="darkMavi">#010326</color>
+
+    <color name="yaziRenk1">#FFFFFF</color>
+    <color name="yaziRenk2">#636363</color>
+
 </resources>

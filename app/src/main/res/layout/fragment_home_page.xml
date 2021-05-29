@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <data>
-    <variable name="homePageFragment" type="com.upschool.team4project.HomePageFragment" />
+    <variable name="homePageFragment" type="com.upschool.team4project.fragments.HomePageFragment" />
     <variable name="adapter" type="com.upschool.team4project.FoodAdapter" />
 
 </data>
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePageFragment">
+    tools:context=".fragments.HomePageFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvfood"
@@ -28,21 +28,25 @@
         android:id="@+id/toolbarHomepage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
+        android:background="@color/koyuAnaRenk"
         android:elevation="5dp"
+        android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/patrick_hand_sc"
             android:text="@string/menu"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textColor="@color/yaziRenk1"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="14dp" />
 
     </androidx.appcompat.widget.Toolbar>
 

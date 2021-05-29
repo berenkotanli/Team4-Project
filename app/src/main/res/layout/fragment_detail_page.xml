@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="detailPageFragment" type="com.upschool.team4project.DetailPageFragment" />
+        <variable name="detailPageFragment" type="com.upschool.team4project.fragments.DetailPageFragment" />
         <variable name="yemekNesne" type="com.upschool.team4project.entity.Yemekler" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DetailPageFragment">
+        tools:context=".fragments.DetailPageFragment">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -27,7 +27,11 @@
             android:id="@+id/buttonEkle"
             android:layout_width="262dp"
             android:layout_height="44dp"
-            android:text="Add"
+            android:fontFamily="@font/patrick_hand_sc"
+            android:text="SEPETE EKLE"
+            android:textColor="@color/yaziRenk2"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -38,9 +42,11 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/patrick_hand_sc"
             android:text="@{yemekNesne.yemek_adi}"
-            android:textSize="24sp"
+            android:textColor="@color/yaziRenk2"
+            android:textSize="30sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/buttonEkle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -52,7 +58,10 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/patrick_hand_sc"
             android:set_price="@{yemekNesne.yemek_fiyat}"
+            android:textColor="@color/yaziRenk2"
+            android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/buttonEkle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -64,7 +73,7 @@
             android:id="@+id/toolbarDetailPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
+            android:background="@color/koyuAnaRenk"
             android:clickable="false"
             android:clipChildren="false"
             android:elevation="5dp"
@@ -80,9 +89,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:fontFamily="@font/patrick_hand_sc"
                 android:text="@{yemekNesne.yemek_adi}"
-                android:textColor="@color/white"
-                android:textSize="20sp"
+                android:textColor="@color/yaziRenk1"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="180dp"
                 tools:layout_editor_absoluteY="14dp" />
 

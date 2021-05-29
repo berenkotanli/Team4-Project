@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homePageFragment"
-        android:name="com.upschool.team4project.HomePageFragment"
+        android:name="com.upschool.team4project.fragments.HomePageFragment"
         android:label="HomePageFragment"
         tools:layout="@layout/fragment_home_page">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailPageFragment"
-        android:name="com.upschool.team4project.DetailPageFragment"
+        android:name="com.upschool.team4project.fragments.DetailPageFragment"
         android:label="DetailPageFragment"
         tools:layout="@layout/fragment_detail_page">
         <argument
@@ -25,17 +25,17 @@
     </fragment>
     <fragment
         android:id="@+id/cartPageFragment"
-        android:name="com.upschool.team4project.CartPageFragment"
+        android:name="com.upschool.team4project.fragments.CartPageFragment"
         android:label="fragment_cart_page"
         tools:layout="@layout/fragment_cart_page" />
     <fragment
         android:id="@+id/campaignPageFragment"
-        android:name="com.upschool.team4project.CampaignPageFragment"
+        android:name="com.upschool.team4project.fragments.CampaignPageFragment"
         android:label="fragment_campaign_page"
         tools:layout="@layout/fragment_campaign_page" />
     <fragment
         android:id="@+id/profilePageFragment"
-        android:name="com.upschool.team4project.ProfilePageFragment"
+        android:name="com.upschool.team4project.fragments.ProfilePageFragment"
         android:label="fragment_profile_page"
         tools:layout="@layout/fragment_profile_page" />
 </navigation>
