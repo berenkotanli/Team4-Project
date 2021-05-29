@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.navArgs
 import com.squareup.picasso.Picasso
-
+import android.view.MenuItem
+import androidx.navigation.Navigation
 import com.upschool.team4project.R
 import com.upschool.team4project.databinding.FragmentDetailPageBinding
 
@@ -27,11 +28,20 @@ class DetailPageFragment : Fragment() {
 
         design.yemekNesne=b.nesne
 
+
         //Picasso part
         var image_name=b.nesne.yemek_resim_adi
         var url="http://kasimadalan.pe.hu/yemekler/resimler/"+image_name
         var id = design.imageView2
         Picasso.get().load(url).into(id)
+
+        var isimNesne=b.nesne.yemek_adi
+        var fiyatNesne=b.nesne.yemek_fiyat.toString()
+        design.buttonEkle.setOnClickListener {
+          var gecis= DetailPageFragmentDirections.sepeteGecis(isimNesne as String,fiyatNesne as String)
+            Navigation.findNavController(it).navigate(gecis)
+        }
+
         return design.root
     }
 

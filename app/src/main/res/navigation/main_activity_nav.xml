@@ -22,12 +22,22 @@
         <argument
             android:name="nesne"
             app:argType="com.upschool.team4project.entity.Yemekler" />
+        <action
+            android:id="@+id/sepeteGecis"
+            app:destination="@id/cartPageFragment" />
     </fragment>
     <fragment
         android:id="@+id/cartPageFragment"
         android:name="com.upschool.team4project.fragments.CartPageFragment"
         android:label="fragment_cart_page"
-        tools:layout="@layout/fragment_cart_page" />
+        tools:layout="@layout/fragment_cart_page" >
+        <argument
+            android:name="isimNesne"
+            app:argType="string" />
+        <argument
+            android:name="fiyatNesne"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/campaignPageFragment"
         android:name="com.upschool.team4project.fragments.CampaignPageFragment"
