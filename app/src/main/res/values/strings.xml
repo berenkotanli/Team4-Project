@@ -8,4 +8,10 @@
     <string name="hesap">Hesap</string>
     <string name="menu">Menu</string>
     <string name="profil">Profil</string>
+    <string name="admin1Name">Beren Kotanlı</string>
+    <string name="admin2Name">Sevgi Aykır</string>
+    <string name="admin3Name">Zeynep Düyenli</string>
+    <string name="admin1Home">Antalya</string>
+    <string name="admin2Home">Manisa</string>
+    <string name="admin3Home">Ankara</string>
 </resources>
