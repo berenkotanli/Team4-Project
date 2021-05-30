@@ -8,48 +8,50 @@
     <variable name="adapter" type="com.upschool.team4project.FoodAdapter" />
 
 </data>
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.HomePageFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvfood"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:adapter="@{adapter}"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarHomepage" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarHomepage"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/koyuAnaRenk"
-        android:elevation="5dp"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/grey"
+        tools:context=".fragments.HomePageFragment">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvfood"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adapter="@{adapter}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarHomepage" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHomepage"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/patrick_hand_sc"
-            android:text="@string/menu"
-            android:textColor="@color/yaziRenk1"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="181dp"
-            tools:layout_editor_absoluteY="14dp" />
+            android:background="@color/koyuAnaRenk"
+            android:elevation="5dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/patrick_hand_sc"
+                android:text="@string/menu"
+                android:textColor="@color/yaziRenk1"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="181dp"
+                tools:layout_editor_absoluteY="14dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
