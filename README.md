@@ -1,6 +1,13 @@
-# UpSchool Team Project
-## Team 4
-
+# UpSchool Team Project-Team 4
+## WE Deliver app:
+* Retrofit is used to get food information from a web server.
+* Designed in accordance with the MVVM architecture.
+* Toolbar, bottom navigation and recyclerview were used in page design.
+### Team Members
+* Beren Kotanlı
+* Sevgi Aykır
+* Zeynep Düyenli
+## Screenshots of the app 
 ![Webp net-resizeimage (3)](https://user-images.githubusercontent.com/43938354/120192182-8a029100-c223-11eb-85c5-b78ee88ea26d.png)
 ![Webp net-resizeimage (2)](https://user-images.githubusercontent.com/43938354/120192198-8c64eb00-c223-11eb-8793-28ab56aa1622.png)
 ![Webp net-resizeimage (6)](https://user-images.githubusercontent.com/43938354/120192214-91c23580-c223-11eb-883f-aab04fca2a47.png)
