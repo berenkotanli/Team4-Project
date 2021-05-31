@@ -4,6 +4,7 @@
 * Designed in accordance with the MVVM architecture.
 * Toolbar, bottom navigation and recyclerview were used in page design.
 * Picasso library is used to retrieve images.
+* Splash screen with animation is used.
 ### Team Members
 * Beren Kotanlı
 * Sevgi Aykır
