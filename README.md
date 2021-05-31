@@ -6,9 +6,9 @@
 * Picasso library is used to retrieve images.
 * Splash screen with animation is used.
 ### Team Members
+* Sevgi Aykır
 * Beren Kotanlı
 * Zeynep Düyenli
-* Sevgi Aykır
 ## Screenshots of the app 
 ![Webp net-resizeimage (3)](https://user-images.githubusercontent.com/43938354/120192182-8a029100-c223-11eb-85c5-b78ee88ea26d.png)
 ![Webp net-resizeimage (2)](https://user-images.githubusercontent.com/43938354/120192198-8c64eb00-c223-11eb-8793-28ab56aa1622.png)
