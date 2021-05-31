@@ -5,11 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.navArgs
 import com.upschool.team4project.R
+import com.upschool.team4project.databinding.FragmentCartPageBinding
 import kotlinx.android.synthetic.main.fragment_cart_page.view.*
 
 class CartPageFragment : Fragment() {
+
+    private lateinit var design: FragmentCartPageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -17,7 +21,7 @@ class CartPageFragment : Fragment() {
     ): View? {
 
         // Inflate the layout for this fragment
-        var design = inflater.inflate(R.layout.fragment_cart_page, container, false)
+        design = DataBindingUtil.inflate(inflater,R.layout.fragment_cart_page, container, false)
 
         val b:  CartPageFragmentArgs by navArgs()
         if(b.isimNesne=="yemek" || b.fiyatNesne=="yemek"){
@@ -31,6 +35,6 @@ class CartPageFragment : Fragment() {
             design.textViewUrunSepet.text=b.fiyatNesne
         }
 
-        return design
+        return design.root
     }
 }

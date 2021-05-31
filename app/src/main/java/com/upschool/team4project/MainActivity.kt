@@ -16,6 +16,7 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
 
     private lateinit var ydaoi:YemeklerDaoInterface
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

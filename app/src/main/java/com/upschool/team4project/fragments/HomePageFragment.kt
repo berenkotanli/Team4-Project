@@ -28,7 +28,7 @@ class HomePageFragment : Fragment() {
     ): View? {
 
         design = DataBindingUtil.inflate(inflater, R.layout.fragment_home_page, container, false)
-        design.rvfood.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        //design.rvfood.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
         design.homePageFragment=this
         //design.rvfood.addItemDecoration(DividerItemDecoration(activity,StaggeredGridLayoutManager.HORIZONTAL))
         //design.rvfood.addItemDecoration(DividerItemDecoration(activity,StaggeredGridLayoutManager.VERTICAL))

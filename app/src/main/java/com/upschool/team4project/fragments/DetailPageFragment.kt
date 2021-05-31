@@ -33,10 +33,7 @@ class DetailPageFragment : Fragment() {
         design.yemekNesne=b.nesne
 
         design.toolbarDetailPage.setNavigationOnClickListener {
-            Log.e("iştee", "basıldıı")
-            val myIntent = Intent(
-                activity, MainActivity::class.java
-            )
+            val myIntent = Intent(activity, MainActivity::class.java)
             startActivity(myIntent)
         }
 
