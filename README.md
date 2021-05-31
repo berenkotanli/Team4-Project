@@ -3,6 +3,7 @@
 * Retrofit is used to get food information from a web server.
 * Designed in accordance with the MVVM architecture.
 * Toolbar, bottom navigation and recyclerview were used in page design.
+* Picasso library is used to retrieve images.
 ### Team Members
 * Beren Kotanlı
 * Sevgi Aykır
